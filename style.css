@@ -1,0 +1,63 @@
+:root {
+  --black: #111111;
+  --light-green: #BCDBB4;
+}
+body {
+  font-family: "Ubuntu", monospace;
+  margin: 0;
+  color: var(--black);
+  font-size: 1rem;
+}
+
+/* Header */
+/* Navbar */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.nav__logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.logo__img {
+  max-width: 50px;
+}
+.logo__name {
+  font-size: 1.4rem;
+}
+.nav__list {
+  display: flex;
+  align-items: center;
+
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+}
+.nav__item {
+  list-style-type: none;
+  position: relative;
+}
+/* Smooth underline animation of nav__item */
+.nav__item::after {
+  content: "";
+  height: 2px;
+  width: 0;
+  background-color: var(--black);
+  display: block;
+  transition: .2s;
+  
+  position: absolute;
+  left: 50%;
+}
+.nav__item:hover::after {
+  width: 100%;
+  left: 0;
+}
+.nav__link {
+  text-decoration: none;
+  color: var(--black);
+}
