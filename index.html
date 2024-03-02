@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="cs">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -19,29 +19,31 @@
       <!-- Navigation bar -->
       <nav class="nav container">
         <a class="nav__logo" href="/">
-          YOUR<span class="logo__separate">LOGO</span>
+          VAŠE<span class="logo__separate">LOGO</span>
         </a>
         <ul class="nav__list">
           <li class="nav__item">
-            <a class="nav__link" href="#">Home</a>
+            <a class="nav__link" href="#">Domů</a>
           </li>
           <li class="nav__item">
-            <a class="nav__link" href="#">About</a>
+            <a class="nav__link" href="#">O nás</a>
           </li>
           <li class="nav__item">
-            <a class="nav__link" href="#">Services</a>
+            <a class="nav__link" href="#">Služby</a>
           </li>
           <li class="nav__item">
-            <a class="nav__link" href="#">Contact</a>
+            <a class="nav__link" href="#">Kontakty</a>
           </li>
         </ul>
       </nav>
 
       <!-- Hero section -->
       <div class="hero">
-        <div class="layer">
+        <div class="semi-transparent-layer">
           <div class="hero__content">
-            <h1 class="hero__title">Lorem ipsum dolor sit amet.</h1>
+            <h1 class="hero__title">
+              Lorem ipsum dolor sit <span class="color-apricot">amet</span>
+            </h1>
             <p class="hero__text">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
               nulla, blanditiis deleniti quasi nihil nam. Cum possimus
@@ -50,11 +52,259 @@
               beatae magni iste autem.
             </p>
             <div class="center">
-              <button class="btn btn--transparent">More about us</button>
+              <button class="btn btn--transparent">Více o nás</button>
             </div>
           </div>
         </div>
       </div>
     </header>
+
+    <!-- Cards section -->
+    <section class="cards__section container">
+      <h2 class="cards__title">Lorem ipsum dolor sit amet consectetur.</h2>
+      <div class="cards__info">
+        <p class="cards__text">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis
+          eveniet, sed quam ex, magnam quae, iure atque deserunt sint architecto
+          incidunt odio.
+        </p>
+        <a class="link link--charcoal-gray" href="#dddd">View all</a>
+      </div>
+
+      <!-- Cards -->
+      <div class="cards">
+        <div class="card">
+          <div class="card__img__container">
+            <img class="card__img" src="img/places/jested.jpg" alt="Ještěd" />
+          </div>
+          <div class="card__content">
+            <a href="#" class="link link--white">Liberecký kraj</a>
+            <h3 class="card__title">Ještěd</h3>
+            <p class="card__description">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum
+              quae at maiores impedit mollitia quisquam, nostrum necessitatibus
+              nesciunt ad id sed minus, laborum nam. Quod alias ipsa odit rem
+              sequi est quo error, sapiente consequatur facilis quis.
+              Recusandae, ex quibusdam!
+            </p>
+            <div class="card__reviews">
+              <div class="stars">
+                <svg class="star star--filled">
+                  <use xlink:href="img/svg/sprite.svg#star"></use>
+                </svg>
+                <svg class="star star--filled">
+                  <use xlink:href="img/svg/sprite.svg#star"></use>
+                </svg>
+                <svg class="star star--filled">
+                  <use xlink:href="img/svg/sprite.svg#star"></use>
+                </svg>
+                <svg class="star star--filled">
+                  <use xlink:href="img/svg/sprite.svg#star"></use>
+                </svg>
+                <svg class="star">
+                  <use xlink:href="img/svg/sprite.svg#star"></use>
+                </svg>
+              </div>
+              2839 reviews
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card__img__container">
+            <img
+              class="card__img"
+              src="img/places/hrad-frydlant.webp"
+              alt="Středověký hrad a renesanční zámek Frýdlant"
+            />
+          </div>
+          <div class="card__content">
+            <a href="#" class="link link--white">Liberecký kraj</a>
+            <h3 class="card__title">
+              Středověký hrad a renesanční zámek Frýdlant
+            </h3>
+            <p class="card__description">
+              Obcaecati doloribus cum impedit, quo veritatis non nobis esse est
+              repudiandae, atque blanditiis inventore numquam porro amet ab
+              maxime consequuntur maiores corrupti illo, ut animi! Mollitia,
+              impedit culpa. Autem totam, reiciendis ex sequi maiores dolor,
+              quas officiis esse ea ullam, animi aut quidem tempora ipsa!
+            </p>
+            <div class="card__reviews">
+              <div class="stars">
+                <svg class="star star--filled">
+                  <use xlink:href="img/svg/sprite.svg#star"></use>
+                </svg>
+                <svg class="star star--filled">
+                  <use xlink:href="img/svg/sprite.svg#star"></use>
+                </svg>
+                <svg class="star star--filled">
+                  <use xlink:href="img/svg/sprite.svg#star"></use>
+                </svg>
+                <svg class="star">
+                  <use xlink:href="img/svg/sprite.svg#star"></use>
+                </svg>
+                <svg class="star">
+                  <use xlink:href="img/svg/sprite.svg#star"></use>
+                </svg>
+              </div>
+              801 reviews
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card__img__container">
+            <img
+              class="card__img"
+              src="img/places/karlstejn.jpg"
+              alt="Karlštejn"
+            />
+          </div>
+          <div class="card__content">
+            <a href="#" class="link link--white">Středočeský kraj</a>
+            <h3 class="card__title">Karlštejn</h3>
+            <p class="card__description">
+              Quod alias ipsa odit rem sequi est quo error, sapiente consequatur
+              facilis quis. Recusandae, ex quibusdam!
+            </p>
+            <div class="card__reviews">
+              <div class="stars">
+                <svg class="star star--filled">
+                  <use xlink:href="img/svg/sprite.svg#star"></use>
+                </svg>
+                <svg class="star star--filled">
+                  <use xlink:href="img/svg/sprite.svg#star"></use>
+                </svg>
+                <svg class="star star--filled">
+                  <use xlink:href="img/svg/sprite.svg#star"></use>
+                </svg>
+                <svg class="star star--filled">
+                  <use xlink:href="img/svg/sprite.svg#star"></use>
+                </svg>
+                <svg class="star">
+                  <use xlink:href="img/svg/sprite.svg#star"></use>
+                </svg>
+              </div>
+              8332 reviews
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card__img__container">
+            <img
+              class="card__img"
+              src="img/places/velka-amerika.jpg"
+              alt="Velká Amerika"
+            />
+          </div>
+          <div class="card__content">
+            <a href="#" class="link link--white">Středočeský kraj</a>
+            <h3 class="card__title">Velká Amerika</h3>
+            <p class="card__description">
+              Quod alias ipsa odit rem sequi est quo error, sapiente consequatur
+              facilis quis. Recusandae, ex quibusdam!
+            </p>
+            <div class="card__reviews">
+              <div class="stars">
+                <svg class="star star--filled">
+                  <use xlink:href="img/svg/sprite.svg#star"></use>
+                </svg>
+                <svg class="star star--filled">
+                  <use xlink:href="img/svg/sprite.svg#star"></use>
+                </svg>
+                <svg class="star star--filled">
+                  <use xlink:href="img/svg/sprite.svg#star"></use>
+                </svg>
+                <svg class="star star--filled">
+                  <use xlink:href="img/svg/sprite.svg#star"></use>
+                </svg>
+                <svg class="star">
+                  <use xlink:href="img/svg/sprite.svg#star"></use>
+                </svg>
+              </div>
+              4508 reviews
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card__img__container">
+            <img
+              class="card__img"
+              src="img/places/pravcicka-brana.jpg"
+              alt="Pravčická brána"
+            />
+          </div>
+          <div class="card__content">
+            <a href="#" class="link link--white">Ústecký kraj</a>
+            <h3 class="card__title">Pravčická brána</h3>
+            <p class="card__description">
+              Quod alias ipsa odit rem sequi est quo error, sapiente consequatur
+              facilis quis. Recusandae, ex quibusdam!
+            </p>
+            <div class="card__reviews">
+              <div class="stars">
+                <svg class="star star--filled">
+                  <use xlink:href="img/svg/sprite.svg#star"></use>
+                </svg>
+                <svg class="star star--filled">
+                  <use xlink:href="img/svg/sprite.svg#star"></use>
+                </svg>
+                <svg class="star star--filled">
+                  <use xlink:href="img/svg/sprite.svg#star"></use>
+                </svg>
+                <svg class="star star--filled">
+                  <use xlink:href="img/svg/sprite.svg#star"></use>
+                </svg>
+                <svg class="star">
+                  <use xlink:href="img/svg/sprite.svg#star"></use>
+                </svg>
+              </div>
+              9724 reviews
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card__img__container">
+            <img
+              class="card__img"
+              src="img/places/adrspasske-skaly.jpg"
+              alt="Adršpašské skály"
+            />
+          </div>
+          <div class="card__content">
+            <a href="#" class="link link--white">Královéhradecký kraj</a>
+            <h3 class="card__title">Adršpašské skály</h3>
+            <p class="card__description">
+              Quod alias ipsa odit rem sequi est quo error, sapiente consequatur
+              facilis quis. Recusandae, ex quibusdam!
+            </p>
+            <div class="card__reviews">
+              <div class="stars">
+                <svg class="star star--filled">
+                  <use xlink:href="img/svg/sprite.svg#star"></use>
+                </svg>
+                <svg class="star star--filled">
+                  <use xlink:href="img/svg/sprite.svg#star"></use>
+                </svg>
+                <svg class="star star--filled">
+                  <use xlink:href="img/svg/sprite.svg#star"></use>
+                </svg>
+                <svg class="star star--filled">
+                  <use xlink:href="img/svg/sprite.svg#star"></use>
+                </svg>
+                <svg class="star star--filled">
+                  <use xlink:href="img/svg/sprite.svg#star"></use>
+                </svg>
+              </div>
+              14508 reviews
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
