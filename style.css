@@ -1,34 +1,71 @@
 :root {
   --black: #111111;
-  --light-green: #BCDBB4;
+  --darkish-green: #166527;
+  --evergreen: #1a3724;
 }
 body {
-  font-family: "Ubuntu", monospace;
+  font-family: "Mulish", sans-serif;
   margin: 0;
   color: var(--black);
   font-size: 1rem;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+p {
+  margin: 0;
+}
+
+/* Useful styles */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn {
+  padding: 10px 30px;
+  font-size: 1rem;
+  border-radius: 0;
+  cursor: pointer;
+}
+.btn--transparent {
+  background-color: transparent;
+  color: #fff;
+  font-weight: 700;
+  border: 1px solid #fff;
+  transition: 0.2s;
+}
+.btn--transparent:hover {
+  background-color: #fff;
+  color: var(--black);
+}
 
 /* Header */
-/* Navbar */
+/* Navigation bar */
 .nav {
   display: flex;
   justify-content: space-between;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
+  padding: 20px;
 }
 .nav__logo {
-  display: flex;
-  align-items: center;
-  gap: 10px;
+  color: var(--darkish-green);
+  font-size: 2rem;
+  font-weight: 700;
+  text-decoration: none;
 }
-.logo__img {
-  max-width: 50px;
+.logo__separate {
+  color: var(--evergreen);
 }
-.logo__name {
-  font-size: 1.4rem;
-}
+
 .nav__list {
   display: flex;
   align-items: center;
@@ -40,18 +77,20 @@ body {
 .nav__item {
   list-style-type: none;
   position: relative;
+  font-size: 1.3rem;
 }
 /* Smooth underline animation of nav__item */
 .nav__item::after {
   content: "";
   height: 2px;
   width: 0;
-  background-color: var(--black);
+  background-color: var(--evergreen);
   display: block;
-  transition: .2s;
-  
+  transition: 0.2s;
+
   position: absolute;
   left: 50%;
+  bottom: -4px;
 }
 .nav__item:hover::after {
   width: 100%;
@@ -60,4 +99,49 @@ body {
 .nav__link {
   text-decoration: none;
   color: var(--black);
+  transition: 0.2s;
+}
+.nav__item:hover > .nav__link {
+  color: var(--evergreen);
+}
+
+/* Hero */
+.hero {
+  padding: 250px 0;
+  background-image: url("img/hero.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  position: relative;
+}
+.layer {
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.6);
+  height: 100%;
+  width: 100%;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero__content {
+  max-width: 50%;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.hero__title {
+  font-size: 2.75rem;
+  font-weight: 800;
+  text-align: center;
+}
+.hero__text {
+  font-size: 1rem;
+  text-align: center;
 }

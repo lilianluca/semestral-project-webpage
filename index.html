@@ -3,39 +3,58 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/x-icon" href="img/mountain.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
       rel="stylesheet"
     />
+    <link rel="icon" type="image/x-icon" href="img/mountain.png" />
     <link rel="stylesheet" href="style.css" />
     <title>Výlety</title>
   </head>
   <body>
     <!-- Header -->
     <header class="header">
-      <nav class="nav">
-        <div class="nav__logo">
-          <img class="logo__img" src="img/mountain.png" alt="Mountain" />
-          <b class="logo__name">vylety.cz</b>
-        </div>
+      <!-- Navigation bar -->
+      <nav class="nav container">
+        <a class="nav__logo" href="/">
+          YOUR<span class="logo__separate">LOGO</span>
+        </a>
         <ul class="nav__list">
           <li class="nav__item">
-            <a class="nav__link" href="#">Domů</a>
+            <a class="nav__link" href="#">Home</a>
           </li>
           <li class="nav__item">
-            <a class="nav__link" href="#">Kategorie</a>
+            <a class="nav__link" href="#">About</a>
           </li>
           <li class="nav__item">
-            <a class="nav__link" href="#">Kontakty</a>
+            <a class="nav__link" href="#">Services</a>
           </li>
           <li class="nav__item">
-            <a class="nav__link" href="#">O nás</a>
+            <a class="nav__link" href="#">Contact</a>
           </li>
         </ul>
       </nav>
+
+      <!-- Hero section -->
+      <div class="hero">
+        <div class="layer">
+          <div class="hero__content">
+            <h1 class="hero__title">Lorem ipsum dolor sit amet.</h1>
+            <p class="hero__text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
+              nulla, blanditiis deleniti quasi nihil nam. Cum possimus
+              voluptatibus fugit ipsum quis amet fugiat in praesentium iusto
+              alias, saepe nobis tempora libero impedit aliquid. At aut tempore
+              beatae magni iste autem.
+            </p>
+            <div class="center">
+              <button class="btn btn--transparent">More about us</button>
+            </div>
+          </div>
+        </div>
+      </div>
     </header>
   </body>
 </html>
