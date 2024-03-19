@@ -6,34 +6,46 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
-    <link rel="icon" type="image/x-icon" href="img/mountain.png" />
+    <link rel="icon" type="image/x-icon" href="img/czech-republic.png" />
     <link rel="stylesheet" href="style.css" />
     <title>Výlety</title>
+    <script src="script.js" defer></script>
   </head>
   <body>
     <!-- Header -->
     <header class="header">
       <!-- Navigation bar -->
-      <nav class="nav container">
+      <nav id="navbar" class="nav container">
         <a class="nav__logo" href="/">
           VAŠE<span class="logo__separate">LOGO</span>
         </a>
-        <ul class="nav__list">
-          <li class="nav__item">
-            <a class="nav__link" href="#">Domů</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="#">O nás</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="#">Služby</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="#">Kontakty</a>
-          </li>
+        <!-- Burger menu -->
+        <button id="burger-btn" class="burger-menu">
+          <span class="burger-menu__item"></span>
+          <span class="burger-menu__item"></span>
+          <span class="burger-menu__item"></span>
+        </button>
+        <ul id="nav__list" class="nav__list">
+          <!-- These 2 divs are used to make smooth transition on height between 0 and auto-->
+          <div id="list__container" class="list__container close-menu">
+            <div class="list__subcontainer">
+              <li class="nav__item">
+                <a class="nav__link" href="#">Domů</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#">O nás</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#">Služby</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#">Kontakty</a>
+              </li>
+            </div>
+          </div>
         </ul>
       </nav>
 
@@ -75,7 +87,7 @@
       <div class="cards">
         <div class="card">
           <div class="card__img__container">
-            <img class="card__img" src="img/places/jested.jpg" alt="Ještěd" />
+            <img class="card__img" src="img/places/jested.webp" alt="Ještěd" />
           </div>
           <div class="card__content">
             <a href="#" class="link link--white">Liberecký kraj</a>
@@ -157,7 +169,7 @@
           <div class="card__img__container">
             <img
               class="card__img"
-              src="img/places/karlstejn.jpg"
+              src="img/places/karlstejn.webp"
               alt="Karlštejn"
             />
           </div>
@@ -195,7 +207,7 @@
           <div class="card__img__container">
             <img
               class="card__img"
-              src="img/places/velka-amerika.jpg"
+              src="img/places/velka-amerika.webp"
               alt="Velká Amerika"
             />
           </div>
@@ -233,7 +245,7 @@
           <div class="card__img__container">
             <img
               class="card__img"
-              src="img/places/pravcicka-brana.jpg"
+              src="img/places/pravcicka-brana.webp"
               alt="Pravčická brána"
             />
           </div>
@@ -271,7 +283,7 @@
           <div class="card__img__container">
             <img
               class="card__img"
-              src="img/places/adrspasske-skaly.jpg"
+              src="img/places/adrspasske-skaly.webp"
               alt="Adršpašské skály"
             />
           </div>
@@ -301,6 +313,129 @@
                 </svg>
               </div>
               14508 reviews
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card__img__container">
+            <img
+              class="card__img"
+              src="img/places/mumlavky-vodopad.webp"
+              alt="Mumlavský vodopád"
+            />
+          </div>
+          <div class="card__content">
+            <a href="#" class="link link--white">Liberecký kraj</a>
+            <h3 class="card__title">Mumlavský vodopád</h3>
+            <p class="card__description">
+              Cumque eveniet autem dolores nesciunt est incidunt, sapiente
+              itaque alias blanditiis, nulla necessitatibus perferendis
+              molestiae provident recusandae quaerat. Lorem ipsum dolor sit
+              amet.
+            </p>
+            <div class="card__reviews">
+              <div class="stars">
+                <svg class="star star--filled">
+                  <use xlink:href="img/svg/sprite.svg#star"></use>
+                </svg>
+                <svg class="star star--filled">
+                  <use xlink:href="img/svg/sprite.svg#star"></use>
+                </svg>
+                <svg class="star star--filled">
+                  <use xlink:href="img/svg/sprite.svg#star"></use>
+                </svg>
+                <svg class="star star--filled">
+                  <use xlink:href="img/svg/sprite.svg#star"></use>
+                </svg>
+                <svg class="star">
+                  <use xlink:href="img/svg/sprite.svg#star"></use>
+                </svg>
+              </div>
+              9108 reviews
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card__img__container">
+            <img
+              class="card__img"
+              src="img/places/prachovske-skaly.webp"
+              alt="Prachovské skály"
+            />
+          </div>
+          <div class="card__content">
+            <a href="#" class="link link--white">Královéhradecký kraj</a>
+            <h3 class="card__title">Prachovské skály</h3>
+            <p class="card__description">
+              Cumque eveniet autem dolores nesciunt est incidunt, sapiente
+              itaque alias blanditiis, nulla necessitatibus perferendis
+              molestiae provident recusandae quaerat. Lorem ipsum dolor sit
+              amet.
+            </p>
+            <div class="card__reviews">
+              <div class="stars">
+                <svg class="star star--filled">
+                  <use xlink:href="img/svg/sprite.svg#star"></use>
+                </svg>
+                <svg class="star star--filled">
+                  <use xlink:href="img/svg/sprite.svg#star"></use>
+                </svg>
+                <svg class="star star--filled">
+                  <use xlink:href="img/svg/sprite.svg#star"></use>
+                </svg>
+                <svg class="star star--filled">
+                  <use xlink:href="img/svg/sprite.svg#star"></use>
+                </svg>
+                <svg class="star star--filled">
+                  <use xlink:href="img/svg/sprite.svg#star"></use>
+                </svg>
+              </div>
+              12512 reviews
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card__img__container">
+            <img
+              class="card__img"
+              src="img/places/zamek-lednice.webp"
+              alt="Zámek Lednice"
+            />
+          </div>
+          <div class="card__content">
+            <a href="#" class="link link--white">Jihomoravský kraj</a>
+            <h3 class="card__title">Zámek Lednice</h3>
+            <p class="card__description">
+              Velit impedit iure repudiandae beatae cupiditate, sed facilis, ex,
+              quas explicabo voluptate architecto. Quam exercitationem quisquam
+              officiis similique aliquam cum pariatur. Officiis fuga cum,
+              voluptate laudantium molestiae eius consequatur rem ipsum quasi ea
+              nam expedita vel neque magni eaque vero fugiat aliquid nihil
+              dolores voluptatibus hic veniam. Nesciunt aperiam ab corrupti esse
+              impedit officiis tenetur eaque alias aspernatur nulla?
+            </p>
+            <div class="card__reviews">
+              <div class="stars">
+                <svg class="star star--filled">
+                  <use xlink:href="img/svg/sprite.svg#star"></use>
+                </svg>
+                <svg class="star star--filled">
+                  <use xlink:href="img/svg/sprite.svg#star"></use>
+                </svg>
+                <svg class="star star--filled">
+                  <use xlink:href="img/svg/sprite.svg#star"></use>
+                </svg>
+                <svg class="star star--filled">
+                  <use xlink:href="img/svg/sprite.svg#star"></use>
+                </svg>
+                <svg class="star">
+                  <use xlink:href="img/svg/sprite.svg#star"></use>
+                </svg>
+              </div>
+              7190 reviews
             </div>
           </div>
         </div>
