@@ -16,7 +16,7 @@
   </head>
   <body>
     <!-- Header -->
-    <header class="header">
+    <header id="header" class="header">
       <!-- Navigation bar -->
       <nav id="navbar" class="nav container">
         <a class="nav__logo" href="/">
@@ -33,13 +33,21 @@
           <div id="list__container" class="list__container close-menu">
             <div class="list__subcontainer">
               <li class="nav__item">
-                <a class="nav__link" href="#">Domů</a>
+                <a class="nav__link" href="/">Domů</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#cards__section">Výlety</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#most-visited__section">
+                  Nejnavštěvovanější
+                </a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#prices"> Ceník </a>
               </li>
               <li class="nav__item">
                 <a class="nav__link" href="#">O nás</a>
-              </li>
-              <li class="nav__item">
-                <a class="nav__link" href="#">Služby</a>
               </li>
               <li class="nav__item">
                 <a class="nav__link" href="#">Kontakty</a>
@@ -72,15 +80,17 @@
     </header>
 
     <!-- Cards section -->
-    <section class="cards__section container">
-      <h2 class="cards__title">Lorem ipsum dolor sit amet consectetur.</h2>
+    <section id="cards__section" class="cards__section container">
+      <h2 class="header-2">Lorem ipsum dolor sit amet consectetur.</h2>
       <div class="cards__info">
         <p class="cards__text">
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis
           eveniet, sed quam ex, magnam quae, iure atque deserunt sint architecto
           incidunt odio.
         </p>
-        <a class="link link--charcoal-gray" href="#dddd">View all</a>
+        <a class="link link--charcoal-gray" href="#most-visited__section"
+          >View all</a
+        >
       </div>
 
       <!-- Cards -->
@@ -441,5 +451,373 @@
         </div>
       </div>
     </section>
+
+    <!-- Most visited section -->
+    <section id="most-visited__section" class="most-visited__section container">
+      <h2 class="header-2">Tipy na výlet (Nejnavštěvovanější)</h2>
+      <p class="most-visited__text">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis
+        eveniet, sed quam ex, magnam quae, iure atque deserunt sint architecto
+        incidunt odio.
+      </p>
+      <ol class="most-visited__list">
+        <li class="cateogory__item">
+          <h3 class="category__title">Liberecký kraj</h3>
+          <ul>
+            <li>Ještěd</li>
+            <li>Středověký hrad a renesanční zámek Frýdlant</li>
+            <li>Dolores, voluptatem corporis itaque.</li>
+            <li>Lorem ipsum dolor sit amet consectetur.</li>
+            <li>Lorem ipsum dolor sit amet.</li>
+            <li>Cupiditate tempora!</li>
+            <li>Ipsa sit!</li>
+            <li>Lorem ipsum dolor sit amet.</li>
+            <li>Cupiditate tempora!</li>
+          </ul>
+        </li>
+        <li class="cateogory__item">
+          <h3 class="category__title">Středočeský kraj</h3>
+          <ul>
+            <li>Blanditiis dicta amet aspernatur.</li>
+            <li>Lorem ipsum dolor sit amet consectetur.</li>
+            <li>Cupiditate tempora!</li>
+            <li>Distinctio voluptatibus</li>
+            <li>Lorem ipsum dolor sit amet.</li>
+            <li>Maiores, saepe tempora</li>
+            <li>Consectetur adipisicing elit.</li>
+            <li>Lorem ipsum dolor sit amet.</li>
+            <li>Cupiditate tempora!</li>
+          </ul>
+        </li>
+        <li class="cateogory__item">
+          <h3 class="category__title">Praha</h3>
+          <ul>
+            <li>Lorem ipsum dolor sit amet consectetur.</li>
+            <li>Quam nesciunt deleniti tempora!</li>
+            <li>Lorem ipsum dolor sit amet.</li>
+            <li>Cupiditate tempora!</li>
+            <li>Ipsa sit!</li>
+            <li>Distinctio voluptatibus</li>
+            <li>Dolores, voluptatem corporis itaque.</li>
+            <li>Distinctio voluptatibus</li>
+          </ul>
+        </li>
+        <li class="cateogory__item">
+          <h3 class="category__title">Královéhradecký kraj</h3>
+          <ul>
+            <li>Distinctio voluptatibus</li>
+            <li>Lorem ipsum dolor sit amet consectetur.</li>
+            <li>Ipsa sit!</li>
+            <li>Quam nesciunt deleniti tempora!</li>
+            <li>Distinctio voluptatibus</li>
+            <li>Dolores, voluptatem corporis itaque.</li>
+            <li>Lorem ipsum dolor sit amet.</li>
+            <li>Cupiditate tempora!</li>
+          </ul>
+        </li>
+        <li class="cateogory__item">
+          <h3 class="category__title">Karlovarský kraj</h3>
+          <ul>
+            <li>Ipsa sit!</li>
+            <li>Lorem ipsum dolor sit amet consectetur.</li>
+            <li>Lorem ipsum dolor sit amet.</li>
+            <li>Cupiditate tempora!</li>
+            <li>Distinctio voluptatibus</li>
+            <li>Quam nesciunt deleniti tempora!</li>
+            <li>Dolores, voluptatem corporis itaque.</li>
+            <li>Distinctio voluptatibus</li>
+          </ul>
+        </li>
+        <li class="cateogory__item">
+          <h3 class="category__title">Plzeňský kraj</h3>
+          <ul>
+            <li>Ipsa sit!</li>
+            <li>Lorem ipsum dolor sit amet consectetur.</li>
+            <li>Lorem ipsum dolor sit amet.</li>
+            <li>Distinctio voluptatibus</li>
+            <li>Quam nesciunt deleniti tempora!</li>
+            <li>Dolores, voluptatem corporis itaque.</li>
+            <li>Cupiditate tempora!</li>
+            <li>Distinctio voluptatibus</li>
+          </ul>
+        </li>
+        <li class="cateogory__item">
+          <h3 class="category__title">Jihočeský kraj</h3>
+          <ul>
+            <li>Ipsa sit!</li>
+            <li>Distinctio voluptatibus</li>
+            <li>Quam nesciunt deleniti tempora!</li>
+            <li>Dolores, voluptatem corporis itaque.</li>
+            <li>Lorem ipsum dolor sit amet consectetur.</li>
+            <li>Lorem ipsum dolor sit amet.</li>
+            <li>Cupiditate tempora!</li>
+            <li>Distinctio voluptatibus</li>
+          </ul>
+        </li>
+        <li class="cateogory__item">
+          <h3 class="category__title">Jihomoravský kraj</h3>
+          <ul>
+            <li>Ipsa sit!</li>
+            <li>Lorem ipsum dolor sit amet consectetur.</li>
+            <li>Lorem ipsum dolor sit amet.</li>
+            <li>Cupiditate tempora!</li>
+            <li>Distinctio voluptatibus</li>
+            <li>Quam nesciunt deleniti tempora!</li>
+            <li>Dolores, voluptatem corporis itaque.</li>
+            <li>Distinctio voluptatibus</li>
+          </ul>
+        </li>
+        <li class="cateogory__item">
+          <h3 class="category__title">Moravskoslezský kraj</h3>
+          <ul>
+            <li>Ipsa sit!</li>
+            <li>Lorem ipsum dolor sit amet consectetur.</li>
+            <li>Distinctio voluptatibus</li>
+            <li>Quam nesciunt deleniti tempora!</li>
+            <li>Dolores, voluptatem corporis itaque.</li>
+            <li>Lorem ipsum dolor sit amet.</li>
+            <li>Cupiditate tempora!</li>
+            <li>Distinctio voluptatibus</li>
+          </ul>
+        </li>
+        <li class="cateogory__item">
+          <h3 class="category__title">Pardubický kraj</h3>
+          <ul>
+            <li>Ipsa sit!</li>
+            <li>Lorem ipsum dolor sit amet consectetur.</li>
+            <li>Lorem ipsum dolor sit amet.</li>
+            <li>Cupiditate tempora!</li>
+            <li>Distinctio voluptatibus</li>
+            <li>Quam nesciunt deleniti tempora!</li>
+            <li>Dolores, voluptatem corporis itaque.</li>
+            <li>Distinctio voluptatibus</li>
+          </ul>
+        </li>
+        <li class="cateogory__item">
+          <h3 class="category__title">Kraj Vysočina</h3>
+          <ul>
+            <li>Distinctio voluptatibus</li>
+            <li>Quam nesciunt deleniti tempora!</li>
+            <li>Dolores, voluptatem corporis itaque.</li>
+            <li>Ipsa sit!</li>
+            <li>Lorem ipsum dolor sit amet consectetur.</li>
+            <li>Lorem ipsum dolor sit amet.</li>
+            <li>Cupiditate tempora!</li>
+            <li>Distinctio voluptatibus</li>
+          </ul>
+        </li>
+        <li class="cateogory__item">
+          <h3 class="category__title">Olomoucký kraj</h3>
+          <ul>
+            <li>Ipsa sit!</li>
+            <li>Lorem ipsum dolor sit amet consectetur.</li>
+            <li>Distinctio voluptatibus</li>
+            <li>Quam nesciunt deleniti tempora!</li>
+            <li>Dolores, voluptatem corporis itaque.</li>
+            <li>Lorem ipsum dolor sit amet.</li>
+            <li>Amet consectetur adipisicing elit.</li>
+            <li>Cupiditate tempora!</li>
+            <li>Distinctio voluptatibus</li>
+          </ul>
+        </li>
+        <li class="cateogory__item">
+          <h3 class="category__title">Ústecký kraj</h3>
+          <ul>
+            <li>Eos praesentium delectus a!</li>
+            <li>Ipsa sit!</li>
+            <li>Lorem ipsum dolor sit amet consectetur.</li>
+            <li>Lorem ipsum dolor sit amet.</li>
+            <li>Cupiditate tempora!</li>
+            <li>Distinctio voluptatibus</li>
+            <li>Amet consectetur adipisicing elit.</li>
+          </ul>
+        </li>
+        <li class="cateogory__item">
+          <h3 class="category__title">Zlínkský kraj</h3>
+          <ul>
+            <li>Amet consectetur adipisicing elit.</li>
+            <li>Ipsa sit!</li>
+            <li>Lorem ipsum dolor sit amet consectetur.</li>
+            <li>Lorem ipsum dolor sit amet.</li>
+            <li>Cupiditate tempora!</li>
+            <li>Distinctio voluptatibus</li>
+            <li>Quam nesciunt deleniti tempora!</li>
+            <li>Dolores, voluptatem corporis itaque.</li>
+          </ul>
+        </li>
+      </ol>
+    </section>
+
+    <!-- Prices -->
+    <section id="prices" class="prices container">
+      <div class="prices__table__wrapper">
+        <table class="prices__table">
+          <thead>
+            <tr>
+              <th class="price__header" colspan="6">Ceník vstupenek</th>
+            </tr>
+            <tr>
+              <th rowspan="2">Kraj</th>
+              <th rowspan="2">Místo</th>
+              <th colspan="3">Cena</th>
+              <th rowspan="2">Poznámka</th>
+            </tr>
+            <tr>
+              <th>Dítě</th>
+              <th>Student</th>
+              <th>Dospělý</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td rowspan="3">Liberecký kraj</td>
+              <td>Lorem ipsum dolor</td>
+              <td>50 Kč</td>
+              <td>100 Kč</td>
+              <td>150 Kč</td>
+              <td>Labore consequatur incidunt saepe.</td>
+            </tr>
+            <tr>
+              <td>Recusandae totam</td>
+              <td>Zdarma</td>
+              <td>75 Kč</td>
+              <td>120 Kč</td>
+              <td>Amet consectetur, adipisicing elit.</td>
+            </tr>
+            <tr>
+              <td>Totam praesentium</td>
+              <td>Zdarma</td>
+              <td>75 Kč</td>
+              <td>125 Kč</td>
+              <td>Veniam magni quidem qui adipisicing</td>
+            </tr>
+            <tr>
+              <td rowspan="1">Karlovarský kraj</td>
+              <td>Quasi enim</td>
+              <td>50 Kč</td>
+              <td>100 Kč</td>
+              <td>150 Kč</td>
+              <td>Labore consequatur incidunt saepe.</td>
+            </tr>
+            <tr>
+              <td rowspan="2">Praha</td>
+              <td>Quasi enim</td>
+              <td>50 Kč</td>
+              <td>100 Kč</td>
+              <td>150 Kč</td>
+              <td>Labore consequatur incidunt saepe.</td>
+            </tr>
+            <tr>
+              <td>Lorem ipsum dolor</td>
+              <td>Zdarma</td>
+              <td>90 Kč</td>
+              <td>200 Kč</td>
+              <td>Amet consectetur, adipisicing elit.</td>
+            </tr>
+            <tr>
+              <td rowspan="4">Liberecký kraj</td>
+              <td>Lorem ipsum dolor</td>
+              <td>50 Kč</td>
+              <td>100 Kč</td>
+              <td>150 Kč</td>
+              <td>Labore consequatur incidunt saepe.</td>
+            </tr>
+            <tr>
+              <td>Recusandae totam</td>
+              <td>Zdarma</td>
+              <td>75 Kč</td>
+              <td>120 Kč</td>
+              <td>Amet consectetur, adipisicing elit.</td>
+            </tr>
+            <tr>
+              <td>Totam praesentium</td>
+              <td>Zdarma</td>
+              <td>75 Kč</td>
+              <td>125 Kč</td>
+              <td>Veniam magni quidem qui adipisicing</td>
+            </tr>
+            <tr>
+              <td>Totam praesentium</td>
+              <td>Zdarma</td>
+              <td>75 Kč</td>
+              <td>125 Kč</td>
+              <td>Veniam magni quidem qui adipisicing</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="footer__links">
+          <a class="footer__logo-name" href="#header">
+            VAŠE<span class="footer__logo--separate">LOGO</span>
+          </a>
+          <ul class="footer__list">
+            <li><a class="link--white" href="#">O nás</a></li>
+            <li>
+              <a class="link--white" href="#">FAQ - často kladené otázky</a>
+            </li>
+            <li><a class="link--white" href="#">HTML validace</a></li>
+            <li><a class="link--white" href="#">CSS validace</a></li>
+          </ul>
+        </div>
+        <div class="social__content">
+          <img
+            class="footer__logo-img"
+            src="img/mountains.png"
+            alt="Mountains"
+          />
+          <ul class="social__list">
+            <li class="social__item">
+              <a
+                class="social__link"
+                href="https://www.facebook.com/"
+                target="_blank"
+              >
+                <svg class="social__icon">
+                  <use xlink:href="img/svg/sprite.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a
+                class="social__link"
+                href="https://www.instagram.com/"
+                target="_blank"
+              >
+                <svg class="social__icon">
+                  <use xlink:href="img/svg/sprite.svg#instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a
+                class="social__link"
+                href="https://linkedin.com/"
+                target="_blank"
+              >
+                <svg class="social__icon">
+                  <use xlink:href="img/svg/sprite.svg#linkedin"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a
+                class="social__link"
+                href="https://www.youtube.com/"
+                target="_blank"
+              >
+                <svg class="social__icon">
+                  <use xlink:href="img/svg/sprite.svg#youtube"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

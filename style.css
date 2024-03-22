@@ -3,17 +3,20 @@
   --darkish-green: #166527;
   --evergreen: #1a3724;
   --apricot: #f5b963;
+  --darker-apricot: #ce8724;
   --charcoal-gray: #4a4a4a;
+  --light-gray: #e2e2e2;
   --charcoal: #2b3030;
   --dull-read: #a52a2a;
+}
+html {
+  scroll-behavior: smooth;
 }
 body {
   font-family: "Roboto", sans-serif;
   margin: 0;
   color: var(--black);
   font-size: 1rem;
-
-  scroll-behavior: smooth;
 }
 h1,
 h2,
@@ -37,6 +40,21 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.header-2 {
+  font-size: 1.4rem;
+
+  position: relative;
+}
+.header-2::after {
+  content: "";
+  width: 120px;
+  height: 2px;
+  background-color: var(--apricot);
+  display: block;
+
+  position: absolute;
+  bottom: -4px;
 }
 .stars {
   display: flex;
@@ -122,6 +140,7 @@ p {
 }
 .list__subcontainer {
   display: flex;
+  align-items: center;
   gap: 10px;
 }
 .nav__item {
@@ -190,6 +209,9 @@ p {
   .nav__logo {
     align-self: flex-start;
   }
+  .nav__item::after {
+    height: 0;
+  }
   .list__subcontainer {
     flex-direction: column;
   }
@@ -197,6 +219,7 @@ p {
     display: grid;
     transition: grid-template-rows 0.4s;
   }
+
   .list__container > div {
     overflow: hidden;
   }
@@ -267,21 +290,6 @@ p {
 .cards__section {
   margin-top: 20px;
 }
-.cards__title {
-  font-size: 1.4rem;
-
-  position: relative;
-}
-.cards__title::after {
-  content: "";
-  width: 120px;
-  height: 2px;
-  background-color: var(--apricot);
-  display: block;
-
-  position: absolute;
-  bottom: -4px;
-}
 .cards__info {
   margin-top: 20px;
 
@@ -350,5 +358,151 @@ p {
 @media (min-width: 992px) {
   .cards {
     grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Most visited section */
+.most-visited__text {
+  max-width: 75%;
+  margin-top: 20px;
+}
+.most-visited__list {
+  display: grid;
+}
+.cateogory__item::marker {
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: var(--darkish-green);
+}
+.cateogory__item ul {
+  list-style-type: disc;
+}
+.category__title {
+  color: var(--darkish-green);
+}
+/* Responsiveness of Most visited section */
+@media (min-width: 600px) {
+  .most-visited__list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 992px) {
+  .most-visited__list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Prices table */
+.prices__table {
+  width: 100%;
+  border-collapse: collapse;
+
+  border: 1px solid var(--charcoal-gray);
+}
+.prices__table__wrapper {
+  overflow-x: auto;
+  white-space: nowrap;
+}
+.prices__table th {
+  background-color: var(--light-gray);
+}
+.prices__table td,
+th {
+  text-align: center;
+  border: 1px solid var(--charcoal-gray);
+  padding: 5px 15px;
+}
+.price__header {
+  padding: 10px 0;
+}
+
+/* Footer */
+.footer {
+  background-color: var(--charcoal);
+  color: #fff;
+}
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+.footer__links {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+}
+.footer__logo-name {
+  text-decoration: none;
+
+  font-size: 2rem;
+  color: var(--apricot);
+}
+.footer__logo--separate {
+  color: var(--darker-apricot);
+}
+.footer__list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.footer__list li a {
+  color: #fff;
+}
+.footer__logo-img {
+  max-width: 160px;
+  filter: invert();
+}
+/* Social icons */
+.social__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+.social__list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+
+  display: flex;
+  gap: 0.35rem;
+}
+.social__item {
+  width: 40px;
+  height: 40px;
+}
+.social__icon {
+  fill: #fff;
+  width: 100%;
+  height: 100%;
+
+  transition: 0.2s;
+}
+.social__icon:hover {
+  fill: var(--apricot);
+}
+/* Footer responsiveness */
+@media (max-width: 600px) {
+  .footer__container {
+    flex-direction: column;
+    gap: 3rem;
+  }
+  .footer__list {
+    align-items: center;
+    justify-content: center;
+  }
+  .social__content {
+    flex-direction: row;
+  }
+  .social__list {
+    flex-direction: column;
   }
 }
