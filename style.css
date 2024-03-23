@@ -113,6 +113,36 @@ p {
   color: var(--apricot);
 }
 
+/* Go up button */
+.go-up__btn {
+  width: 60px;
+  height: 60px;
+
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+
+  opacity: 0;
+  pointer-events: none;
+
+  transition: all 0.4s;
+}
+.go-up__btn--visible {
+  opacity: 0.5;
+  pointer-events: auto;
+}
+.go-up__btn:hover {
+  transform: rotate(360deg) scale(1.1);
+  opacity: 1;
+}
+
+.go-up__icon {
+  width: 60px;
+  height: 60px;
+  stroke: #fff;
+  fill: var(--darkish-green);
+}
+
 /* Header */
 /* Navigation bar */
 .nav {
@@ -217,9 +247,9 @@ p {
   }
   .list__container {
     display: grid;
+    grid-template-rows: 0fr;
     transition: grid-template-rows 0.4s;
   }
-
   .list__container > div {
     overflow: hidden;
   }
@@ -227,12 +257,7 @@ p {
     display: flex;
   }
   .open-menu {
-    /* display: flex; */
     grid-template-rows: 1fr;
-  }
-  .close-menu {
-    /* display: none; */
-    grid-template-rows: 0fr;
   }
 }
 

@@ -1,16 +1,23 @@
+// navbar variables
 const navbar = document.querySelector("#burger-btn");
 const listContainer = document.querySelector("#list__container");
+// go up button variables
+const goUpBtn = document.querySelector("#go-up-btn");
 
-let showNavbarState = true;
-
+/**
+ * Open/Close burger menu
+ */
 navbar.addEventListener("click", () => {
-  if (showNavbarState) {
-    listContainer.classList.remove("close-menu");
-    listContainer.classList.add("open-menu");
-    showNavbarState = false;
+  listContainer.classList.toggle("open-menu");
+});
+
+/**
+ * Show/Hide goUpBtn
+ */
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 500) {
+    goUpBtn.classList.add("go-up__btn--visible");
   } else {
-    listContainer.classList.remove("open-menu");
-    listContainer.classList.add("close-menu");
-    showNavbarState = true;
+    goUpBtn.classList.remove("go-up__btn--visible");
   }
 });
