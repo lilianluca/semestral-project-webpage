@@ -231,7 +231,7 @@ p {
   border-radius: 10px;
 }
 
-/* Responsiveness of hero navbar */
+/* Responsiveness of navbar */
 @media (max-width: 768px) {
   .nav {
     flex-direction: column;
@@ -295,6 +295,9 @@ p {
 .hero__text {
   font-size: 1rem;
   text-align: center;
+}
+.about-us__link {
+  text-decoration: none;
 }
 /* Responsiveness of hero section */
 @media (min-width: 992px) {
@@ -439,6 +442,35 @@ th {
 }
 .price__header {
   padding: 10px 0;
+}
+
+/* About us section */
+.about-us__section {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.about-us__content {
+  flex: 1 1 0px;
+}
+.about-us__text {
+  margin-top: 20px;
+}
+.about-us__fig {
+  flex: 1 1 0px;
+  margin: 10px;
+}
+.about-us__img {
+  width: 100%;
+  border-radius: 15px;
+}
+/* About us section responsiveness */
+@media (min-width: 768px) {
+  .about-us__section {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 /* Footer */
