@@ -50,7 +50,7 @@
                 <a class="nav__link" href="#about-us__section">O nás</a>
               </li>
               <li class="nav__item">
-                <a class="nav__link" href="#">Kontakty</a>
+                <a class="nav__link" href="#contact-us__section">Kontakty</a>
               </li>
             </div>
           </div>
@@ -72,7 +72,11 @@
               beatae magni iste autem.
             </p>
             <div class="center">
-              <a class="btn btn--transparent about-us__link" href="#about-us__section">Více o nás</a>
+              <a
+                class="btn btn--transparent about-us__link"
+                href="#about-us__section"
+                >Více o nás</a
+              >
             </div>
           </div>
         </div>
@@ -774,13 +778,74 @@
         </p>
       </div>
       <figure class="about-us__fig">
-        <img
-          class="about-us__img"
-          src="img/about-us.webp"
-          alt="Náš tým"
-        />
+        <img class="about-us__img" src="img/about-us.webp" alt="Náš tým" />
         <figcaption>Náš tým</figcaption>
       </figure>
+    </section>
+
+    <!-- Contact us section -->
+    <section id="contact-us__section" class="contact-us__section container">
+      <form class="contact-us__form">
+        <fieldset class="contact-us__fieldset">
+          <legend>Kontaktujte nás</legend>
+          <div class="contact-us__name__wrapper">
+            <label for="name">Jméno a příjmení</label>
+            <input
+              type="text"
+              id="name"
+              class="contact-us__input"
+            />
+          </div>
+          <div class="phone-email__container">
+            <div class="contact-us__phone-email__wrapper">
+              <label for="phone">Telefon</label>
+              <input type="text" id="phone" class="contact-us__input phone__input" />
+            </div>
+            <div class="contact-us__phone-email__wrapper">
+              <label for="email">Email</label>
+              <input type="email" id="email" class="contact-us__input email__input" />
+            </div>
+          </div>
+          <div class="contact-us__textarea__wrapper">
+            <label for="text">Zpráva</label>
+            <textarea
+              id="text"
+              cols="30"
+              rows="10"
+              class="contact-us__textarea"
+            ></textarea>
+          </div>
+          <div>
+            <input type="checkbox" id="check" class="" />
+            <label for="check">Souhlasím se zpracováním osobních údajů</label>
+          </div>
+          <div class="center">
+            <input
+              type="submit"
+              value="Odeslat"
+              class="btn btn--evergreen"
+            />
+          </div>
+        </fieldset>
+      </form>
+
+      <div class="our-contacts">
+        <h3 class="contacts__title">Kontakt</h3>
+        <div class="phone-mail__wrapper">
+          <svg class="our-contacts__icon">
+            <use xlink:href="img/svg/sprite.svg#phone"></use>
+          </svg>
+          <h4>+420 000 000 000</h4>
+        </div>
+        <div class="phone-mail__wrapper">
+          <svg class="our-contacts__icon">
+            <use xlink:href="img/svg/sprite.svg#email"></use>
+          </svg>
+          <h4>email@email.com</h4>
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+        <p>198 Orwa Avenue, Prague</p>
+      </div>
     </section>
 
     <!-- Footer -->
