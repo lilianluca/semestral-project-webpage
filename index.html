@@ -12,13 +12,13 @@
     <link rel="icon" type="image/x-icon" href="img/czech-republic.png" />
     <link rel="stylesheet" href="style.css" />
     <title>Výlety</title>
-    <script src="script.js" defer></script>
+    <script type="module" src="javascript/script.js" defer></script>
   </head>
   <body>
     <!-- Header -->
     <header id="header" class="header">
       <!-- Navigation bar -->
-      <nav id="navbar" class="nav container">
+      <nav id="navbar" class="nav header-container">
         <a class="nav__logo" href="/">
           VAŠE<span class="logo__separate">LOGO</span>
         </a>
@@ -471,7 +471,8 @@
         eveniet, sed quam ex, magnam quae, iure atque deserunt sint architecto
         incidunt odio.
       </p>
-      <ol class="most-visited__list">
+      
+      <ol id="most-visited__list" class="most-visited__list">
         <li class="cateogory__item">
           <h3 class="category__title">Liberecký kraj</h3>
           <ul>
@@ -657,6 +658,10 @@
           </ul>
         </li>
       </ol>
+
+      <div class="center">
+        <button id="most-visited-show-more__btn" class="btn btn-sm btn--evergreen">Zobrazit více</button>
+      </div>
     </section>
 
     <!-- Prices section-->
@@ -790,20 +795,24 @@
           <legend>Kontaktujte nás</legend>
           <div class="contact-us__name__wrapper">
             <label for="name">Jméno a příjmení</label>
-            <input
-              type="text"
-              id="name"
-              class="contact-us__input"
-            />
+            <input type="text" id="name" class="contact-us__input" />
           </div>
           <div class="phone-email__container">
             <div class="contact-us__phone-email__wrapper">
               <label for="phone">Telefon</label>
-              <input type="text" id="phone" class="contact-us__input phone__input" />
+              <input
+                type="text"
+                id="phone"
+                class="contact-us__input phone__input"
+              />
             </div>
             <div class="contact-us__phone-email__wrapper">
               <label for="email">Email</label>
-              <input type="email" id="email" class="contact-us__input email__input" />
+              <input
+                type="email"
+                id="email"
+                class="contact-us__input email__input"
+              />
             </div>
           </div>
           <div class="contact-us__textarea__wrapper">
@@ -820,11 +829,7 @@
             <label for="check">Souhlasím se zpracováním osobních údajů</label>
           </div>
           <div class="center">
-            <input
-              type="submit"
-              value="Odeslat"
-              class="btn btn--evergreen"
-            />
+            <input type="submit" value="Odeslat" class="btn btn--evergreen" />
           </div>
         </fieldset>
       </form>
