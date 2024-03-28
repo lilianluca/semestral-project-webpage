@@ -12,8 +12,9 @@
     <link rel="icon" type="image/x-icon" href="img/czech-republic.png" />
     <link rel="stylesheet" href="style.css" />
     <title>Výlety</title>
-    <script type="module" src="javascript/script.js" defer></script>
+    <script type="module" src="javascript/script.js"></script>
   </head>
+
   <body>
     <!-- Header -->
     <header id="header" class="header">
@@ -28,10 +29,10 @@
           <span class="burger-menu__item"></span>
           <span class="burger-menu__item"></span>
         </button>
-        <ul id="nav__list" class="nav__list">
-          <!-- These 2 divs are used to make smooth transition on height between 0 and auto-->
-          <div id="list__container" class="list__container">
-            <div class="list__subcontainer">
+        <!-- These 2 divs are used to make smooth transition on height between 0 and auto-->
+        <div id="list__container" class="list__container">
+          <div class="list__subcontainer">
+            <ul id="nav__list" class="nav__list">
               <li class="nav__item">
                 <a class="nav__link" href="/">Domů</a>
               </li>
@@ -52,9 +53,9 @@
               <li class="nav__item">
                 <a class="nav__link" href="#contact-us__section">Kontakty</a>
               </li>
-            </div>
+            </ul>
           </div>
-        </ul>
+        </div>
       </nav>
 
       <!-- Hero section -->
@@ -84,7 +85,7 @@
     </header>
 
     <!-- Go up button -->
-    <a href="#header" id="go-up-btn" class="go-up__btn">
+    <a href="#header" id="go-up-btn" class="go-up__btn" title="go up">
       <svg class="go-up__icon">
         <use xlink:href="img/svg/sprite.svg#arrow-up-circle"></use>
       </svg>
@@ -111,8 +112,8 @@
             <img class="card__img" src="img/places/jested.webp" alt="Ještěd" />
           </div>
           <div class="card__content">
-            <a href="#" class="link link--white">Liberecký kraj</a>
-            <h3 class="card__title">Ještěd</h3>
+            <h3>Liberecký kraj</h3>
+            <h4 class="card__title">Ještěd</h4>
             <p class="card__description">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum
               quae at maiores impedit mollitia quisquam, nostrum necessitatibus
@@ -152,10 +153,10 @@
             />
           </div>
           <div class="card__content">
-            <a href="#" class="link link--white">Liberecký kraj</a>
-            <h3 class="card__title">
+            <h3>Liberecký kraj</h3>
+            <h4 class="card__title">
               Středověký hrad a renesanční zámek Frýdlant
-            </h3>
+            </h4>
             <p class="card__description">
               Obcaecati doloribus cum impedit, quo veritatis non nobis esse est
               repudiandae, atque blanditiis inventore numquam porro amet ab
@@ -195,8 +196,8 @@
             />
           </div>
           <div class="card__content">
-            <a href="#" class="link link--white">Středočeský kraj</a>
-            <h3 class="card__title">Karlštejn</h3>
+            <h3>Středočeský kraj</h3>
+            <h4 class="card__title">Karlštejn</h4>
             <p class="card__description">
               Quod alias ipsa odit rem sequi est quo error, sapiente consequatur
               facilis quis. Recusandae, ex quibusdam!
@@ -233,8 +234,8 @@
             />
           </div>
           <div class="card__content">
-            <a href="#" class="link link--white">Středočeský kraj</a>
-            <h3 class="card__title">Velká Amerika</h3>
+            <h3>Středočeský kraj</h3>
+            <h4 class="card__title">Velká Amerika</h4>
             <p class="card__description">
               Quod alias ipsa odit rem sequi est quo error, sapiente consequatur
               facilis quis. Recusandae, ex quibusdam!
@@ -271,8 +272,8 @@
             />
           </div>
           <div class="card__content">
-            <a href="#" class="link link--white">Ústecký kraj</a>
-            <h3 class="card__title">Pravčická brána</h3>
+            <h3>Ústecký kraj</h3>
+            <h4 class="card__title">Pravčická brána</h4>
             <p class="card__description">
               Quod alias ipsa odit rem sequi est quo error, sapiente consequatur
               facilis quis. Recusandae, ex quibusdam!
@@ -309,8 +310,8 @@
             />
           </div>
           <div class="card__content">
-            <a href="#" class="link link--white">Královéhradecký kraj</a>
-            <h3 class="card__title">Adršpašské skály</h3>
+            <h3>Královéhradecký kraj</h3>
+            <h4 class="card__title">Adršpašské skály</h4>
             <p class="card__description">
               Quod alias ipsa odit rem sequi est quo error, sapiente consequatur
               facilis quis. Recusandae, ex quibusdam!
@@ -347,8 +348,8 @@
             />
           </div>
           <div class="card__content">
-            <a href="#" class="link link--white">Liberecký kraj</a>
-            <h3 class="card__title">Mumlavský vodopád</h3>
+            <h3>Liberecký kraj</h3>
+            <h4 class="card__title">Mumlavský vodopád</h4>
             <p class="card__description">
               Cumque eveniet autem dolores nesciunt est incidunt, sapiente
               itaque alias blanditiis, nulla necessitatibus perferendis
@@ -387,8 +388,8 @@
             />
           </div>
           <div class="card__content">
-            <a href="#" class="link link--white">Královéhradecký kraj</a>
-            <h3 class="card__title">Prachovské skály</h3>
+            <h3>Královéhradecký kraj</h3>
+            <h4 class="card__title">Prachovské skály</h4>
             <p class="card__description">
               Cumque eveniet autem dolores nesciunt est incidunt, sapiente
               itaque alias blanditiis, nulla necessitatibus perferendis
@@ -427,8 +428,8 @@
             />
           </div>
           <div class="card__content">
-            <a href="#" class="link link--white">Jihomoravský kraj</a>
-            <h3 class="card__title">Zámek Lednice</h3>
+            <h3>Jihomoravský kraj</h3>
+            <h4 class="card__title">Zámek Lednice</h4>
             <p class="card__description">
               Velit impedit iure repudiandae beatae cupiditate, sed facilis, ex,
               quas explicabo voluptate architecto. Quam exercitationem quisquam
@@ -471,7 +472,7 @@
         eveniet, sed quam ex, magnam quae, iure atque deserunt sint architecto
         incidunt odio.
       </p>
-      
+
       <ol id="most-visited__list" class="most-visited__list">
         <li class="cateogory__item">
           <h3 class="category__title">Liberecký kraj</h3>
@@ -660,109 +661,116 @@
       </ol>
 
       <div class="center">
-        <button id="most-visited-show-more__btn" class="btn btn-sm btn--evergreen">Zobrazit více</button>
+        <button
+          id="most-visited-show-more__btn"
+          class="btn btn-sm btn--evergreen"
+        >
+          Zobrazit více
+        </button>
       </div>
     </section>
 
     <!-- Prices section-->
-    <section id="prices__section" class="prices container">
+    <div id="prices__section" class="prices container">
       <div class="prices__table__wrapper">
         <table class="prices__table">
           <thead>
             <tr>
-              <th class="price__header" colspan="6">Ceník vstupenek</th>
+              <th class="price__header" colspan="6" scope="colgroup" id="cenik">
+                Cenik vstupenek
+              </th>
             </tr>
             <tr>
-              <th rowspan="2">Kraj</th>
-              <th rowspan="2">Místo</th>
-              <th colspan="3">Cena</th>
-              <th rowspan="2">Poznámka</th>
+              <th rowspan="2" scope="col" id="kraj">Kraj</th>
+              <th rowspan="2" scope="col" id="misto">Misto</th>
+              <th colspan="3" scope="colgroup" id="cena">Cena</th>
+              <th rowspan="2" scope="col" id="poznamka">Poznamka</th>
             </tr>
             <tr>
-              <th>Dítě</th>
-              <th>Student</th>
-              <th>Dospělý</th>
+              <th scope="col" id="cena__dite">Dite</th>
+              <th scope="col" id="cena__student">Student</th>
+              <th scope="col" id="cena__dospely">Dospely</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td rowspan="3">Liberecký kraj</td>
-              <td>Lorem ipsum dolor</td>
-              <td>50 Kč</td>
-              <td>100 Kč</td>
-              <td>150 Kč</td>
-              <td>Labore consequatur incidunt saepe.</td>
+              <td rowspan="3" headers="kraj">Liberecký kraj</td>
+              <td headers="misto">Lorem ipsum dolor</td>
+              <td headers="cena__dite">50 Kč</td>
+              <td headers="cena__student">100 Kč</td>
+              <td headers="cena__dospely">150 Kč</td>
+              <td headers="poznamka">Labore consequatur incidunt saepe.</td>
             </tr>
             <tr>
-              <td>Recusandae totam</td>
-              <td>Zdarma</td>
-              <td>75 Kč</td>
-              <td>120 Kč</td>
-              <td>Amet consectetur, adipisicing elit.</td>
+              <td headers="misto">Lorem ipsum dolor</td>
+              <td headers="cena__dite">Zdarma</td>
+              <td headers="cena__student">120 Kč</td>
+              <td headers="cena__dospely">150 Kč</td>
+              <td headers="poznamka">Labore incidunt ahae saepe.</td>
             </tr>
             <tr>
-              <td>Totam praesentium</td>
-              <td>Zdarma</td>
-              <td>75 Kč</td>
-              <td>125 Kč</td>
-              <td>Veniam magni quidem qui adipisicing</td>
+              <td headers="misto">Lorem ipsum dolor</td>
+              <td headers="cena__dite">50 Kč</td>
+              <td headers="cena__student">100 Kč</td>
+              <td headers="cena__dospely">150 Kč</td>
+              <td headers="poznamka">Labore consequatur incidunt saepe.</td>
             </tr>
             <tr>
-              <td rowspan="1">Karlovarský kraj</td>
-              <td>Quasi enim</td>
-              <td>50 Kč</td>
-              <td>100 Kč</td>
-              <td>150 Kč</td>
-              <td>Labore consequatur incidunt saepe.</td>
+              <td rowspan="1" headers="kraj">Karlovarský kraj</td>
+              <td headers="misto">Lorem ipsum dolor</td>
+              <td headers="cena__dite">50 Kč</td>
+              <td headers="cena__student">100 Kč</td>
+              <td headers="cena__dospely">150 Kč</td>
+              <td headers="poznamka">Labore consequatur incidunt saepe.</td>
             </tr>
             <tr>
-              <td rowspan="2">Praha</td>
-              <td>Quasi enim</td>
-              <td>50 Kč</td>
-              <td>100 Kč</td>
-              <td>150 Kč</td>
-              <td>Labore consequatur incidunt saepe.</td>
+              <td rowspan="2" headers="kraj">Praha</td>
+              <td headers="misto">Lorem ipsum dolor</td>
+              <td headers="cena__dite">50 Kč</td>
+              <td headers="cena__student">100 Kč</td>
+              <td headers="cena__dospely">150 Kč</td>
+              <td headers="poznamka">Labore consequatur incidunt saepe.</td>
             </tr>
             <tr>
-              <td>Lorem ipsum dolor</td>
-              <td>Zdarma</td>
-              <td>90 Kč</td>
-              <td>200 Kč</td>
-              <td>Amet consectetur, adipisicing elit.</td>
+              <td headers="misto">Lorem ipsum dolor</td>
+              <td headers="cena__dite">50 Kč</td>
+              <td headers="cena__student">100 Kč</td>
+              <td headers="cena__dospely">150 Kč</td>
+              <td headers="poznamka">Labore consequatur incidunt saepe.</td>
             </tr>
             <tr>
-              <td rowspan="4">Liberecký kraj</td>
-              <td>Lorem ipsum dolor</td>
-              <td>50 Kč</td>
-              <td>100 Kč</td>
-              <td>150 Kč</td>
-              <td>Labore consequatur incidunt saepe.</td>
+              <td rowspan="4" headers="kraj">Liberecký kraj</td>
+              <td headers="misto">Lorem ipsum dolor</td>
+              <td headers="cena__dite">50 Kč</td>
+              <td headers="cena__student">100 Kč</td>
+              <td headers="cena__dospely">150 Kč</td>
+              <td headers="poznamka">Labore consequatur incidunt saepe.</td>
             </tr>
             <tr>
-              <td>Recusandae totam</td>
-              <td>Zdarma</td>
-              <td>75 Kč</td>
-              <td>120 Kč</td>
-              <td>Amet consectetur, adipisicing elit.</td>
+              <td headers="misto">Lorem ipsum dolor</td>
+              <td headers="cena__dite">50 Kč</td>
+              <td headers="cena__student">100 Kč</td>
+              <td headers="cena__dospely">150 Kč</td>
+              <td headers="poznamka">Labore consequatur incidunt saepe.</td>
             </tr>
             <tr>
-              <td>Totam praesentium</td>
-              <td>Zdarma</td>
-              <td>75 Kč</td>
-              <td>125 Kč</td>
-              <td>Veniam magni quidem qui adipisicing</td>
+              <td headers="misto">Lorem ipsum dolor</td>
+              <td headers="cena__dite">50 Kč</td>
+              <td headers="cena__student">100 Kč</td>
+              <td headers="cena__dospely">150 Kč</td>
+              <td headers="poznamka">Labore consequatur incidunt saepe.</td>
             </tr>
             <tr>
-              <td>Totam praesentium</td>
-              <td>Zdarma</td>
-              <td>75 Kč</td>
-              <td>125 Kč</td>
-              <td>Veniam magni quidem qui adipisicing</td>
+              <td headers="misto">Lorem ipsum dolor</td>
+              <td headers="cena__dite">50 Kč</td>
+              <td headers="cena__student">100 Kč</td>
+              <td headers="cena__dospely">150 Kč</td>
+              <td headers="poznamka">Labore consequatur incidunt saepe.</td>
             </tr>
           </tbody>
         </table>
       </div>
-    </section>
+    </div>
 
     <!-- About us section-->
     <section id="about-us__section" class="about-us__section container">
@@ -795,15 +803,17 @@
           <legend>Kontaktujte nás</legend>
           <div class="contact-us__name__wrapper">
             <label for="name">Jméno a příjmení</label>
-            <input type="text" id="name" class="contact-us__input" />
+            <input type="text" id="name" class="contact-us__input" required />
           </div>
           <div class="phone-email__container">
             <div class="contact-us__phone-email__wrapper">
               <label for="phone">Telefon</label>
               <input
-                type="text"
+                type="tel"
                 id="phone"
                 class="contact-us__input phone__input"
+                pattern="^(\+420)? ?[1-9][0-9]{2} ?[0-9]{3} ?[0-9]{3}$"
+                required
               />
             </div>
             <div class="contact-us__phone-email__wrapper">
@@ -812,6 +822,7 @@
                 type="email"
                 id="email"
                 class="contact-us__input email__input"
+                required
               />
             </div>
           </div>
@@ -825,7 +836,7 @@
             ></textarea>
           </div>
           <div>
-            <input type="checkbox" id="check" class="" />
+            <input type="checkbox" id="check" class="" required />
             <label for="check">Souhlasím se zpracováním osobních údajů</label>
           </div>
           <div class="center">
@@ -861,12 +872,26 @@
             VAŠE<span class="footer__logo--separate">LOGO</span>
           </a>
           <ul class="footer__list">
-            <li><a class="link--white" href="#">O nás</a></li>
+            <li><a class="link--white" href="#about-us__section">O nás</a></li>
             <li>
-              <a class="link--white" href="#">FAQ - často kladené otázky</a>
+              <a
+                class="link--white"
+                href="https://validator.w3.org/nu/?doc=http%3A%2F%2Fstuwrk.nti.tul.cz%2F%7Elilian.luca%2Fsp%2F"
+                >HTML validace</a
+              >
             </li>
-            <li><a class="link--white" href="#">HTML validace</a></li>
-            <li><a class="link--white" href="#">CSS validace</a></li>
+            <li>
+              <a
+                class="link--white"
+                href="https://jigsaw.w3.org/css-validator/validator?uri=http%3A%2F%2Fstuwrk.nti.tul.cz%2F%7Elilian.luca%2Fsp%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en"
+                >CSS validace</a
+              >
+            </li>
+            <li>
+              <a href="https://achecks.org/achecker" class="link--white"
+                >Online audit</a
+              >
+            </li>
           </ul>
         </div>
         <div class="social__content">
@@ -881,6 +906,7 @@
                 class="social__link"
                 href="https://www.facebook.com/"
                 target="_blank"
+                title="Facebook"
               >
                 <svg class="social__icon">
                   <use xlink:href="img/svg/sprite.svg#facebook"></use>
@@ -892,6 +918,7 @@
                 class="social__link"
                 href="https://www.instagram.com/"
                 target="_blank"
+                title="Instagram"
               >
                 <svg class="social__icon">
                   <use xlink:href="img/svg/sprite.svg#instagram"></use>
@@ -903,6 +930,7 @@
                 class="social__link"
                 href="https://linkedin.com/"
                 target="_blank"
+                title="LinkedIn"
               >
                 <svg class="social__icon">
                   <use xlink:href="img/svg/sprite.svg#linkedin"></use>
@@ -914,6 +942,7 @@
                 class="social__link"
                 href="https://www.youtube.com/"
                 target="_blank"
+                title="YouTube"
               >
                 <svg class="social__icon">
                   <use xlink:href="img/svg/sprite.svg#youtube"></use>
